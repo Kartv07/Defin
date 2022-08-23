@@ -1,19 +1,15 @@
 import React, { useContext } from 'react';
 
 import { TransactionContext } from '../context/TransactionContext';
-
-import dummyData from '../utils/dummyData';
-
-import useFetch from '../hooks/useFetch';
+import useFetch from '../utils/useFetch';
 
 const shortenAddress = (currentAccount) => `${currentAccount.slice(0, 5)}...${currentAccount.slice(currentAccount.length - 4)}`
 
 const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, amount, url}) => {
     const gifUrl = useFetch({keyword})
-    // const gifUrl = "https://metro.co.uk/wp-content/uploads/2015/05/pokemon_crying.gif?quality=90&strip=all&zoom=1&resize=500%2C284"
 
     return (
-        <div className="bg-[#ffffff] m-4 flex flex-1
+        <div className="bg-[#000000] m-4 flex flex-1
             2xl:min-w-[450px]
             2xl:max-w-[500px]
             sm:min-w-[270px]
@@ -21,21 +17,21 @@ const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, a
             flex-col p-3 rounded-md hover:shadow-2xl">
                 <div className="flex flex-col items-center w-full mt-3">
                     <div className="w-full mb-6 p-2">
-                        <p className=" text-base ">From Address:
+                        <p className=" text-white text-base ">From Address:
                             <a href={`https://goerli.etherscan.io/address/${addressFrom}`} target="_blank" rel="noopener noreferrer" className='text-cyan-400'>
                                      {shortenAddress(addressFrom)}
                             </a>
                         </p>
-                        <p className=" text-base ">To Address:
+                        <p className=" text-white text-base ">To Address:
                             <a href={`https://goerli.etherscan.io/address/${addressTo}`} target="_blank" rel="noopener noreferrer" className='text-cyan-400'>
-                                    {shortenAddress(addressFrom)}
+                                    {shortenAddress(addressTo)}
                             </a>
                         </p>
                         
-                        <p className="text text-base ">
+                        <p className="text-white text-base ">
                             Amount: {amount}
                         </p>
-                        <p className="text-lg text-base ">
+                        <p className="text-white text-base ">
                             Message: {message}
                         </p>
 

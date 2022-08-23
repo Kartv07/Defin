@@ -22,7 +22,7 @@ const Navbar = () => {
             </div>
 
             <ul className="text-white md:flex hidden list-noneflex-row justify-between items-center flex-initial">
-                {["About", "Exchange", "Community", "Wallet"].map((item, index) => (
+                {["About", "Exchange", "Community", "Contact Us"].map((item, index) => (
                     <NavbarItem key={item + index} title={item}/>
                 ))}
                 <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
