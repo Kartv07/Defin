@@ -54,7 +54,8 @@ const Welcome = () => {
 
                 <div className="flex flex-col flex-1 items-center justify-start w-full md:mt-0 mt-10">
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
-                        <p className="text-white "><b>Your Address: </b>{shortenAddress(currentAccount)}</p>
+                        <h3 className="text-white font-bold text-2xl">Make Transaction</h3>
+                        <p className="text-white my-2 w-full rounded-full p-2 outline-none bg-transparent border-none text-sm white-glassmorphism">{(currentAccount)}</p>
                         <Input placeholder="Receiver's Address" name="addressTo" type="text" handleChange={handleChange} />
                         <Input placeholder="Amount" name="amount" type="number" handleChange={handleChange} />
                         <Input placeholder="Tweet Keyword" name="keyword" type="text" handleChange={handleChange} />
