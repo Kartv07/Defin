@@ -1,42 +1,30 @@
-import logo from '../../images/logo.png';
+import twitter_logo from '../../images/twitter_logo.png';
+import telegram from '../../images/email_logo.png';
+import github from '../../images/github_logo.png';
+
+
 const Footer = () => {
     return (
-        <div className="w-full flex md:justify-center justify-between items-center flex-col p-4 bg-[#778899]">
-            <div className="w-full  sm:flex-row flex-col justify-between items-center my-4">
-                <div className='row'>
-                <div>
-                    <img src={logo} alt="twiss" className='w-64 cursor-pointer' />
-                </div>
 
-                    <div className='column'>
-                        <div className='title'>About us</div>
-                        <div className='link cursor-pointer'>Story</div>
-                        <div className='link cursor-pointer'>Credentials</div>
-                        <div className='link cursor-pointer'>Testimonials</div>
+                <div className="w-full flex flex-row bg-[#000000] justify-around" id ="Contact Us">
+                   <div className="join p-5"><p className='text-5xl text-white p-3 '>Join DeFin</p><br />
+                   <p className='text-white text-xl'>Stay on top of Twiss happenings. Be the first to know about <br/>new features, user reported issues and things we work on! </p></div>
+                    
+                    <div className='flex flex-col'>
+                        <div className="flex flex-row">
+                        <a href="https://github.com/chico110/Twiss" alt="#" target="_blank" className='link cursor-pointer'><img src={github}  alt="logo" className="w-20 mx-5 cursor-pointer"/></a>
+                        <a href="https://www.linkedin.com/in/achhayapathak/" alt="#" target="_blank"  className='link cursor-pointer'><img src={telegram}  alt="logo" className="w-20  mx-5 cursor-pointer"/></a>
+                        </div>
+                        
+                        <div className="flex flex-row">
+                        <a href="https://twitter.com/frozen_parantha" alt="#" target="_blank"  className='link cursor-pointer'><img src={twitter_logo}  alt="logo" className="w-20 m-5 cursor-pointer"/></a>
+                        <a href="https://www.linkedin.com/in/gaurav-gandhi-885301174/" alt="#" target="_blank"  className='link cursor-pointer'><img src={telegram}  alt="logo" className="w-20 m-5 cursor-pointer"/></a>
+                        </div>
                     </div>
-                    <div className='column'>
-                        <div className='title'>Services</div>
-                        <div className='link cursor-pointer'>Tutorials</div>
-                        <div className='link cursor-pointer'>Consulting</div>
-                        <div className='link cursor-pointer'>Development</div>
-                    </div>
-                    <div className='column'>
-                        <div className='title'>Contact Us</div>
-                        <div className='link cursor-pointer'>Address</div>
-                        <div className='link cursor-pointer'>Email</div>
-                        <div className='link cursor-pointer'>Contact No</div>
-                    </div>
-                    <div className='column'>
-                        <div className='title'>Connect</div>
-                        <a href="https://github.com/chico110/Twiss" alt="#" target="_blank" className='link cursor-pointer'>GitHub</a>
-                        <a href="https://www.linkedin.com/in/achhayapathak/" alt="#" target="_blank"  className='link cursor-pointer'>Linkedin</a>
-                        <a href="https://twitter.com/frozen_parantha" alt="#" target="_blank"  className='link cursor-pointer'>Twitter</a>
-                        <a href="https://www.instagram.com/notachhay_/" alt="#" target="_blank"  className='link cursor-pointer'>Instagram</a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
+                </div>
+              
+
     );
 }
 

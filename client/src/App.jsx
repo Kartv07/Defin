@@ -6,7 +6,7 @@ const App = () => {
       <div className="gradient-bg-welcome">
         <Navbar />
         <Welcome />
-      <Transactions />
+        <Transactions />
       </div>
       <Footer /> 
     </div>
