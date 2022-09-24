@@ -32,6 +32,7 @@ const Welcome = () => {
     }
     
     return (
+        <>
         <div className="flex flex-col w-full justify-center items-center" >
             <div className="flex flex-col items-start justify-between md:p-4 py-12 px-4">
                 <div className= "flex md:flex-row flex-col justify-between md:p-20 py-12 px-4">
@@ -57,7 +58,7 @@ const Welcome = () => {
                             </button>
                         )}
                     </div>
-                    <div className= "circles" ><img class="Page-img" src={imagess} alt="Go Borderless"></img></div>
+                    <div className= "circles" ><img className="Page-img" src={imagess} alt="Go Borderless"></img></div>
                     
                 </div>
 
@@ -124,6 +125,9 @@ const Welcome = () => {
             </div>
             <br /><br /><br />
         </div>
+       
+        </>
+
     );
 }
 

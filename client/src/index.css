@@ -150,6 +150,12 @@ body {
   border: 1px dotted white;
 }
 
+.show_value{
+  width: 500px;
+
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
