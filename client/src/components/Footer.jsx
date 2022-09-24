@@ -8,7 +8,7 @@ const Footer = () => {
 
                 <div className="w-full flex flex-row bg-[#000000] justify-around" id ="Contact Us">
                    <div className="join p-5"><p className='text-5xl text-white p-3 '>Join DeFin</p><br />
-                   <p className='text-white text-xl'>Stay on top of Twiss happenings. Be the first to know about <br/>new features, user reported issues and things we work on! </p></div>
+                   <p className='text-white text-xl'>Stay on top of DeFin happenings. Be the first to know about <br/>new features, user reported issues and things we work on! </p></div>
                     
                     <div className='flex flex-col'>
                         <div className="flex flex-row">

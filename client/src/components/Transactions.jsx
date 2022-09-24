@@ -10,11 +10,11 @@ const Transactions = () => {
 
     return (
         <div className="flex w-full justify-center items-center 2xl:px-20 ">
-            <div className="flex flex-col md:p-12 py-12 px-4">
+            <div className="flex flex-col md:p-12 py-12 px-4" id="Transactions">
                 {
                     currentAccount ? (
                         <div>
-                            <h1 className="text-white text-5xl text-center my-2 " id="Transactions"><b>Latest Transaction</b></h1>
+                            <h1 className="text-white text-5xl text-center my-2 " ><b>Latest Transaction</b></h1>
                             <div className='p-4 flex flex-col text-black  white-glassmorphism table'>
                                 <div className='flex flex-col w-100 text-white'>
                                     <div className="heading border-2 p-2 m-2 rounded-full flex flex-row justify-around bg-white text-black font-bolder text-2xl">

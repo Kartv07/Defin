@@ -30,9 +30,9 @@ const Welcome = () => {
         }
         sendTransaction();
     }
-
+    
     return (
-        <div className="flex flex-col w-full justify-center items-center">
+        <div className="flex flex-col w-full justify-center items-center" >
             <div className="flex flex-col items-start justify-between md:p-4 py-12 px-4">
                 <div className= "flex md:flex-row flex-col justify-between md:p-20 py-12 px-4">
                     <div className="flex flex-1 justify-center flex-col md:mr-10">
@@ -41,20 +41,23 @@ const Welcome = () => {
                         </h1>
                         <h4 className="text-2xl font-semibold  text-white py-1">One Stop Access to Etherum Transactions</h4>
                         <p className="text-white text-left mt-5 font-white md:w-9/12 w-11/12 text-base py-2">
-                            <p>DeFin is a free, client-side interface helping you interact with the Ethereum blockchain. Our easy-to-use platform allows you to make transactions, see latest transactions and so much more</p>
+                            <p>DeFin is a free, client-side interface that enables you to interact with the Ethereum blockchain. Owing to its feasibility and adaptability, our user friendly platform allows you to make transactions, lets you see the latest transactions and so much more.</p>
                         </p>
                         {!currentAccount && (
                             <button 
                                 type="button"
-                                onClick={connectWallet}
+                                onClick={
+                                    connectWallet
+                                }
+                                
                                 className="w-40 flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3
                                 rounded-full cursor-pointer hover:bg-[#2546bd]"
                             >
-                                <p className="text-white text-base font-semibold">Connet Wallet</p>
+                                <p className="text-white text-base font-semibold">Connect Wallet</p>
                             </button>
                         )}
                     </div>
-                    <div className= "circles"><img class="Page-img" src={imagess} alt="Go Borderless"></img></div>
+                    <div className= "circles" ><img class="Page-img" src={imagess} alt="Go Borderless"></img></div>
                     
                 </div>
 

@@ -92,10 +92,14 @@ export const TransactionProvider = ({children}) => {
 
             setCurrentAccount(accounts[0]);
 
+            location.reload();
+
         } catch(error) {
             console.log(error);
             throw new Error("No ethereum object.")
         }
+
+
     }
 
     const sendTransaction = async () => {
