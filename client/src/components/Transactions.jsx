@@ -19,7 +19,6 @@ const Transactions = () => {
     const handleChange = (e)=>
     {
         setAddress(e.target.value);
-        // console.log(address);
     }
 
     

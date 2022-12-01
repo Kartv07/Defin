@@ -4,10 +4,10 @@ import React from 'react';
 
 const Navbar = () => {
 
-    const NavbarItem = ({title, classProps}) => {
+    const NavbarItem = ({title}) => {
         return (
             <a href={`#${title}`}>
-            <li className={`mx-4 nav-element py-2 px-7 mx-2  cursor-pointer font-semibold text-xl ${classProps}`} >
+            <li className="mx-4 nav-element py-2 px-7 mx-2  cursor-pointer font-semibold text-xl" >
                 {title}
             </li>
             </a>
@@ -22,8 +22,8 @@ const Navbar = () => {
             </div>
 
             <ul className="text-white md:flex hidden list-noneflex-row justify-between items-center flex-initial">
-                {["About Us", "Transfer","Transactions",  "Contact Us"].map((item, index) => (
-                    <NavbarItem key={item + index} title={item}/>
+                {["About Us", "Transfer","Transactions", "Contact Us"].map((item) => (
+                    <NavbarItem title={item}/>
                 ))}
             </ul>
 

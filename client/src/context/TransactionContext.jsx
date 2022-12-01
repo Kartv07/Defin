@@ -5,7 +5,7 @@ import {contractABI, contractAddress} from '../utils/constants';
 
 export const TransactionContext = React.createContext();
 
-const {ethereum} = window;
+const { ethereum } = window;
 
 const getEthereumContract = () => {
     const provider = new ethers.providers.Web3Provider(ethereum);
@@ -13,6 +13,7 @@ const getEthereumContract = () => {
     const transactionContract = new ethers.Contract(contractAddress, contractABI, signer); 
 
     return transactionContract;
+    
 }
 
 export const TransactionProvider = ({children}) => {

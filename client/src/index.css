@@ -20,8 +20,8 @@ body {
 
 .gradient-bg-welcome {
   background-color:#000000;
-  background-image: url("../images/background2.png");
-  background-repeat: repeat;
+  /* background-image: url("../images/background2.png"); */
+  /* background-repeat: repeat; */
 }
 
 .defi-heading{
