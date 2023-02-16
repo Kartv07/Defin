@@ -7,6 +7,7 @@ export const TransactionContext = React.createContext();
 
 const { ethereum } = window;
 
+
 const getEthereumContract = () => {
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
@@ -139,6 +140,7 @@ export const TransactionProvider = ({children}) => {
             console.log(error);
             throw new Error("No ethereum object.")
         }
+
     }
 
     useEffect(() => {
