@@ -1,5 +1,4 @@
 pragma solidity ^0.8.0;
-
 contract Transactions {
     uint transactionCount;
 
@@ -15,6 +14,7 @@ contract Transactions {
     }
 
     TransferStruct[] transactions;
+
 
     function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword ) public {
         transactionCount += 1;

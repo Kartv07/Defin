@@ -1,7 +1,6 @@
 import logo from '../../images/logo2.png';
 import React from 'react';
 
-
 const Navbar = () => {
 
     const NavbarItem = ({title}) => {

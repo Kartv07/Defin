@@ -2,7 +2,6 @@ import React, { useContext , useState } from 'react';
 import { TransactionContext } from '../context/TransactionContext';
 
 const shortenAddress = (currentAccount) => `${currentAccount.slice(0, 5)}...${currentAccount.slice(currentAccount.length - 4)}`
-
 const Transactions = () => {
     const { currentAccount, transactions } = useContext(TransactionContext);
     const [address, setAddress] = useState('');

@@ -3,7 +3,6 @@ import { useState } from "react";
 
 var web3 = new Web3( "https://mainnet.infura.io/v3/9ba7d3f2f43f4b28b0e6a9303b5517e4");
 
-
 const Hash = () => {
   const [hashTable, setHashTable] = useState([]);
   const [transactionHash, setTransactionHash] = useState([]);

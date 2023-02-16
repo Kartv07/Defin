@@ -3,7 +3,6 @@ import {Loader} from './';
 import imagess from '../../images/image.svg'
 import { TransactionContext } from "../context/TransactionContext";
 
-
 const Input = ({placeholder, name, type, value, handleChange}) => (
     <input 
         placeholder={placeholder}
